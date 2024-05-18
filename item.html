@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./products.js" defer></script>
+    <script src="./product-item.js" defer></script>
+    <link rel="stylesheet" href="./product-styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="" alt="" class="image" />
+      <div class="information">
+        <h1 class="name"></h1>
+        <h2 class="price"></h2>
+        <p class="description"></p>
+        <form action="" class="buy">
+          <div class="input-container">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="input-container">
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" required />
+          </div>
+          <button type="submit">BUY</button>
+        </form>
+      </div>
+      <div class="review-wrapper">
+        <div class="reviews-container">
+          <h2>Reviews</h2>
+          <div class="reviews"></div>
+        </div>
+        <form action="" class="review">
+          <textarea name="review" id="review-area"></textarea>
+          <button type="submit">Submit Review</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

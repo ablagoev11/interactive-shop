@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Regular Roboto";
+  src: url("./fonts/roboto-regular.woff2");
+}
+:root {
+  --red-color: #a50121;
+  --gray-color: #c8c8c8;
+}
+html,
+body {
+  font-family: "Regular Roboto", sans-serif;
+  background-color: var(--gray-color);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  width: 70%;
+}
+.item img {
+  width: 150px;
+  border: 2px solid var(--red-color);
+  border-radius: 13px;
+}
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  height: 100vh;
+  width: 70%;
+  gap: 15px;
+}
+
+.item {
+  --gray-color: #efeaea;
+  padding: 1rem;
+  border: 2px solid var(--red-color);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: var(--gray-color);
+}
+
+.item .description {
+  flex: 1;
+}
+
+.item button {
+  display: block;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 13px;
+  cursor: pointer;
+}
+.item button:hover {
+  border: 2px solid var(--red-color);
+  color: white;
+  background-color: black;
+}
